@@ -1,0 +1,35 @@
+﻿@model GeloraGorApp.Models.JenisLapangan
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h2>Create New</h2>
+            <h4 class="text-primary">Jenis Lapangan</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="NamaJenis" class="control-label">Nama Jenis</label>
+                    <input asp-for="NamaJenis" class="form-control" />
+                    <span asp-validation-for="NamaJenis" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gelora Gor App</title>
+
+    <environment include="Development">
+        <!--     Fonts and icons     -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="~/now-ui/assets/css/now-ui-dashboard.css" />
+        <link rel="stylesheet" href="~/now-ui/assets/css/bootstrap.min.css" />
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/now-ui/assets/css/bootstrap.min.css"
+              
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/now-ui/assets/css/now-ui-dashboard.css" asp-append-version="true" />
+    </environment>
+</head>
+<body class="">
+    <div class="wrapper">
+        <div class="sidebar" data-color="blue">
+            <div class="logo">
+                <a href="" class="simple-text logo-mini">
+                    GL
+                </a>
+                <a href="" class="simple-text logo-normal">
+                    GELORA GOR
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="../../Home">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Jadwals">
+                            <i class="now-ui-icons ui-1_calendar-60"></i>
+                            <p>Order</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../JenisLapangans">
+                            <i class="now-ui-icons files_paper"></i>
+                            <p>Jenis Lapangan</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Lapangans">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Lapangan</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <partial name="_CookieConsentPartial" />
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent  bg-primary  navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="">@ViewData["classLi"]</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-1_button-power"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Log Out</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm">
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <environment include="Development">
+        <script src="~/now-ui/assets/js/core/jquery.min.js"></script>
+        <script src="~/now-ui/assets/js/core/bootstrap.min.js"></script>
+        <script src="~/now-ui/assets/js/now-ui-dashboard.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/now-ui/assets/js/core/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/now-ui/assets/js/core/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/now-ui/assets/js/now-ui-dashboard.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

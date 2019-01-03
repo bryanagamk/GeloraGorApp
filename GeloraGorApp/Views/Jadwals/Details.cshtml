@@ -1,0 +1,53 @@
+﻿@model GeloraGorApp.Models.Jadwal
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header ">
+            <h2>Details</h2>
+            <h4 class="text-primary">Jadwal</h4>
+        </div>
+        <div class="card-body">
+            <dl class="dl-horizontal">
+                <dt>
+                    Jam Mulai
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.WaktuAwal)
+                </dd>
+                <dt>
+                    Jam Selesai
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.WaktuAkhir)
+                </dd>
+                <dt>
+                    Catatan
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Catatan)
+                </dd>
+                <dt>
+                    ID Lapangan
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Lapangan.Id)
+                </dd>
+                <dt>
+                    ID Admin
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Pegawai.Id)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+</div>

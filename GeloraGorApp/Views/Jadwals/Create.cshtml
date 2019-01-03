@@ -1,0 +1,54 @@
+﻿@model GeloraGorApp.Models.Jadwal
+
+@{
+    ViewData["Title"] = "Create New Order";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h2>Create</h2>
+            <h4>New Order</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="LapanganId" class="control-label"></label>
+                    <select asp-for="LapanganId" class="form-control" asp-items="ViewBag.LapanganId"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PegawaiId" class="control-label"></label>
+                    <select asp-for="PegawaiId" class="form-control" asp-items="ViewBag.PegawaiId"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="WaktuAwal" class="control-label"></label>
+                    <input asp-for="WaktuAwal" class="form-control" />
+                    <span asp-validation-for="WaktuAwal" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="WaktuAkhir" class="control-label"></label>
+                    <input asp-for="WaktuAkhir" class="form-control" />
+                    <span asp-validation-for="WaktuAkhir" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Catatan" class="control-label"></label>
+                    <input asp-for="Catatan" class="form-control" />
+                    <span asp-validation-for="Catatan" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

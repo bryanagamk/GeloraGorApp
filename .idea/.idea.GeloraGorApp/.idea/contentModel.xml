@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_GeloraGorApp.2032105303.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="GeloraGorApp" t="IncludeRecursive">
+        <e p="Controllers" t="Include">
+          <e p="HomeController.cs" t="Include" />
+          <e p="JadwalsController.cs" t="Include" />
+          <e p="JenisLapangansController.cs" t="Include" />
+          <e p="LapangansController.cs" t="Include" />
+          <e p="PegawaisController.cs" t="Include" />
+        </e>
+        <e p="Ef" t="Include">
+          <e p="DataContext.cs" t="Include" />
+        </e>
+        <e p="GeloraGorApp.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20190102183918_initCreate.Designer.cs" t="Include" />
+          <e p="20190102183918_initCreate.cs" t="Include" />
+          <e p="DataContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="ErrorViewModel.cs" t="Include" />
+          <e p="Jadwal.cs" t="Include" />
+          <e p="JenisLapangan.cs" t="Include" />
+          <e p="Lapangan.cs" t="Include" />
+          <e p="Pegawai.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Home" t="Include">
+            <e p="About.cshtml" t="Include" />
+            <e p="Contact.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Jadwals" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="JenisLapangans" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Lapangans" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Pegawais" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="Error.cshtml" t="Include" />
+            <e p="_CookieConsentPartial.cshtml" t="Include" />
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="_new.cshtml" t="Include" />
+          </e>
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+        </e>
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="GeloraGorApp.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+            <e p="site.min.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="images" t="Include">
+            <e p="banner1.svg" t="Include" />
+            <e p="banner2.svg" t="Include" />
+            <e p="banner3.svg" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+            <e p="site.min.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE" t="Include" />
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-theme.css" t="Include" />
+                  <e p="bootstrap-theme.css.map" t="Include" />
+                  <e p="bootstrap-theme.min.css" t="Include" />
+                  <e p="bootstrap-theme.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="glyphicons-halflings-regular.eot" t="Include" />
+                  <e p="glyphicons-halflings-regular.svg" t="Include" />
+                  <e p="glyphicons-halflings-regular.ttf" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff2" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="npm.js" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="jquery" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE.md" t="Include" />
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+            </e>
+          </e>
+          <e p="now-ui" t="Include">
+            <e p="CHANGELOG.md" t="Include" />
+            <e p="README.md" t="Include" />
+            <e p="assets" t="Include">
+              <e p="css" t="Include">
+                <e p="bootstrap.min.css" t="Include" />
+                <e p="bootstrap.min.css.map" t="Include" />
+                <e p="now-ui-dashboard.css" t="Include" />
+                <e p="now-ui-dashboard.css.map" t="Include" />
+                <e p="now-ui-dashboard.min.css" t="Include" />
+              </e>
+              <e p="demo" t="Include">
+                <e p="demo.css" t="Include" />
+                <e p="demo.js" t="Include" />
+              </e>
+              <e p="fonts" t="Include">
+                <e p="nucleo-license.md" t="Include" />
+                <e p="nucleo-outline.eot" t="Include" />
+                <e p="nucleo-outline.ttf" t="Include" />
+                <e p="nucleo-outline.woff" t="Include" />
+                <e p="nucleo-outline.woff2" t="Include" />
+              </e>
+              <e p="img" t="Include">
+                <e p="apple-icon.png" t="Include" />
+                <e p="bg5.jpg" t="Include" />
+                <e p="default-avatar.png" t="Include" />
+                <e p="favicon.png" t="Include" />
+                <e p="header.jpg" t="Include" />
+                <e p="mike.jpg" t="Include" />
+                <e p="now-logo.png" t="Include" />
+                <e p="now-ui-dashboard.gif" t="Include" />
+              </e>
+              <e p="js" t="Include">
+                <e p="core" t="Include">
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="jquery.min.js" t="Include" />
+                  <e p="popper.min.js" t="Include" />
+                </e>
+                <e p="now-ui-dashboard.js" t="Include" />
+                <e p="now-ui-dashboard.js.map" t="Include" />
+                <e p="now-ui-dashboard.min.js" t="Include" />
+                <e p="plugins" t="Include">
+                  <e p="bootstrap-notify.js" t="Include" />
+                  <e p="chartjs.min.js" t="Include" />
+                  <e p="perfect-scrollbar.jquery.min.js" t="Include" />
+                </e>
+              </e>
+              <e p="scss" t="Include">
+                <e p="now-ui-dashboard" t="Include">
+                  <e p="_alerts.scss" t="Include" />
+                  <e p="_buttons.scss" t="Include" />
+                  <e p="_cards.scss" t="Include" />
+                  <e p="_checkboxes-radio.scss" t="Include" />
+                  <e p="_dropdown.scss" t="Include" />
+                  <e p="_fixed-plugin.scss" t="Include" />
+                  <e p="_footers.scss" t="Include" />
+                  <e p="_images.scss" t="Include" />
+                  <e p="_inputs.scss" t="Include" />
+                  <e p="_misc.scss" t="Include" />
+                  <e p="_mixins.scss" t="Include" />
+                  <e p="_navbar.scss" t="Include" />
+                  <e p="_nucleo-outline.scss" t="Include" />
+                  <e p="_page-header.scss" t="Include" />
+                  <e p="_responsive.scss" t="Include" />
+                  <e p="_sidebar-and-main-panel.scss" t="Include" />
+                  <e p="_tables.scss" t="Include" />
+                  <e p="_typography.scss" t="Include" />
+                  <e p="_variables.scss" t="Include" />
+                  <e p="cards" t="Include">
+                    <e p="_card-chart.scss" t="Include" />
+                    <e p="_card-map.scss" t="Include" />
+                    <e p="_card-plain.scss" t="Include" />
+                    <e p="_card-user.scss" t="Include" />
+                  </e>
+                  <e p="mixins" t="Include">
+                    <e p="_buttons.scss" t="Include" />
+                    <e p="_cards.scss" t="Include" />
+                    <e p="_dropdown.scss" t="Include" />
+                    <e p="_inputs.scss" t="Include" />
+                    <e p="_page-header.scss" t="Include" />
+                    <e p="_sidebar.scss" t="Include" />
+                    <e p="_transparency.scss" t="Include" />
+                    <e p="_vendor-prefixes.scss" t="Include" />
+                  </e>
+                  <e p="plugins" t="Include">
+                    <e p="_plugin-animate-bootstrap-notify.scss" t="Include" />
+                    <e p="_plugin-perfect-scrollbar.scss" t="Include" />
+                  </e>
+                </e>
+                <e p="now-ui-dashboard.scss" t="Include" />
+              </e>
+            </e>
+            <e p="docs" t="Include">
+              <e p="documentation.html" t="Include" />
+            </e>
+            <e p="examples" t="Include">
+              <e p="dashboard.html" t="Include" />
+              <e p="icons.html" t="Include" />
+              <e p="map.html" t="Include" />
+              <e p="notifications.html" t="Include" />
+              <e p="pre.html" t="Include" />
+              <e p="tables.html" t="Include" />
+              <e p="typography.html" t="Include" />
+              <e p="upgrade.html" t="Include" />
+              <e p="user.html" t="Include" />
+            </e>
+            <e p="gulpfile.js" t="Include" />
+            <e p="nucleo-icons.html" t="Include" />
+            <e p="package.json" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GeloraGorApp.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

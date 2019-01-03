@@ -1,0 +1,55 @@
+﻿@model IEnumerable<GeloraGorApp.Models.Lapangan>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h2>Lapangan</h2>
+            <p>
+                <a class="btn btn-primary" asp-action="Create">Create New</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead class="text-primary">
+                    <tr>
+                        <th>
+                            Nama Lapangan
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Harga)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Jenis)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NamaLapangan)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Harga)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Foto)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

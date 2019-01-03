@@ -1,0 +1,53 @@
+﻿@model GeloraGorApp.Models.Lapangan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h2>Details</h2>
+            <h4 class="text-primary">Lapangan</h4>
+        </div>
+        <div class="card-body">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NamaLapangan)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.NamaLapangan)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Catatan)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Catatan)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Harga)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Harga)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Foto)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Foto)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Jenis)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Jenis.Id)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+</div>

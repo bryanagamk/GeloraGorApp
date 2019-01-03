@@ -1,0 +1,63 @@
+﻿@model IEnumerable<GeloraGorApp.Models.Jadwal>
+
+@{
+    ViewData["Title"] = "Order";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h2>Order Lapangan</h2>
+            <p>
+                <a class="btn btn-primary" asp-action="Create">Create New Order</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="text-primary">
+                        <tr>
+                            <th>
+                                Jam Mulai
+                            </th>
+                            <th>
+                                Jam Selesai
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Catatan)
+                            </th>
+                            <th>
+                                ID Lapangan
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.WaktuAwal)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.WaktuAkhir)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Catatan)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Lapangan.Id)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+﻿@model GeloraGorApp.Models.Jadwal
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h2>Delete</h2>
+            <h3>Are you sure you want to delete this?</h3>
+        </div>
+        <div class="card-body">
+            <h4>Jadwal</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    Jam Mulai
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.WaktuAwal)
+                </dd>
+                <dt>
+                    Jam Selesai
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.WaktuAkhir)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Catatan)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Catatan)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Lapangan)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Lapangan.Id)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Pegawai)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Pegawai.Id)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Delete" class="btn btn-success" /> 
+                <a class="btn btn-danger" asp-action="Index">Back to List</a>
+            </form>
+        </div>
+    </div>
+</div>
+

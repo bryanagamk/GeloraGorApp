@@ -1,0 +1,28 @@
+﻿@model GeloraGorApp.Models.JenisLapangan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h2>Details</h2>
+            <h4 class="text-primary">JenisLapangan</h4>
+        </div>
+        <div class="card-body">
+            <dl class="dl-horizontal">
+                <dt>
+                    Nama Jenis Lapangan
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.NamaJenis)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+</div>

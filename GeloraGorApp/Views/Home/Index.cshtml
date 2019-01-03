@@ -1,0 +1,50 @@
+﻿@model IEnumerable<GeloraGorApp.Models.Jadwal>
+
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["classLi"] = "Overview Jadwal";
+}
+
+<div class="col-md-12">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+
+            <div class="card-header">
+                <h4 class="card-title"> Lapangan  @Html.DisplayFor(modelItem => item.LapanganId)</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class=" text-primary">
+                        <th>
+                            Jam Mulai
+                        </th>
+                        <th>
+                            Jam Selesai
+                        </th>
+                        <th class="text-right">
+                            Catatan
+                        </th>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.WaktuAwal)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.WaktuAkhir)
+                                </td>
+                                <td class="text-right">
+                                    @Html.DisplayFor(modelItem => item.Catatan)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
